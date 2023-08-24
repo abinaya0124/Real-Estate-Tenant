@@ -1,0 +1,73 @@
+.r-container {
+  overflow: hidden;
+  position: relative;
+}
+.r-head {
+  margin-bottom: 2rem;
+}
+.text1 {
+  color: orangered;
+  font-size: 18px;
+}
+.text2 {
+  color: coral;
+  font-size: 18px;
+}
+.swiper-cards {
+  margin: 5rem;
+}
+.r-card {
+  gap: 0.6rem;
+  padding: 1rem;
+  margin: auto;
+  transition: all 0.2s ease-in;
+  max-width: max-content;
+}
+.r-card > img {
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 10px;
+  height: 200px;
+}
+.r-card > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.r-card > :nth-child(3) {
+  font-size: 1.5rem;
+}
+.r-card > :nth-child(4) {
+  font-size: 1.2rem;
+  width: 15rem;
+}
+.r-card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(136, 160, 255, 0.46) 217.91%
+  );
+  box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+.swiper-horizontal {
+  overflow: visible;
+}
+.p-buttons {
+  position: absolute;
+  gap: 1rem;
+  bottom: 0rem;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+}
+.p-buttons button {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  background: #eee;
+  cursor: pointer;
+  z-index: 1;
+}

@@ -1,10 +1,9 @@
 import React from "react";
 import "./properties.css";
-import data from "../data.json";
-
+import PropertyData from "../../PropertyData.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
-import { sliderSettings } from "../common/SliderSettings";
+import { sliderSettings } from "../../common/SliderSettings";
 import { NavLink } from "react-router-dom";
 
 const Properties = () => {
@@ -17,10 +16,10 @@ const Properties = () => {
         </div>
         <div className="swiper-cards">
           <Swiper {...sliderSettings}>
-            {data.map((card, idx) => (
-              <SwiperSlide key={idx}>
+            {PropertyData.map((card, id) => (
+              <SwiperSlide key={id}>
                 <div className="r-card">
-                  <NavLink>
+                  <NavLink to={`/property/${card.id}`}>
                     <img src={card.img} alt="Home" className="p-img" />
                     <p className="secondaryText r-price">
                       <span>$</span>

@@ -1,0 +1,26 @@
+.tenant-table {
+  table {
+    border-collapse: collapse;
+  }
+  thead {
+    width: 100%;
+  }
+  th {
+    padding: 10px;
+    text-align: left;
+  }
+  td {
+    padding: 10px;
+  }
+  .edit-delete {
+    cursor: pointer;
+  }
+  .edit {
+    color: rgb(245, 40, 40);
+    font-size: 1.2rem;
+  }
+  .delete {
+    font-size: 1.2rem;
+    color: rgb(17, 184, 17);
+  }
+}

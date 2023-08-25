@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Zara",
+    "type": "Apartment",
+    "noOfPeople": "2",
+    "address": "No:20/A, ABC, Hydrabad",
+    "lease": "2 Years"
+  },
+  {
+    "id": 2,
+    "name": "Klair",
+    "type": "Apartment",
+    "noOfPeople": "5",
+    "address": "No:20/A, BCA, Andhra",
+    "lease": "3 Years"
+  },
+  {
+    "id": 3,
+    "name": "Thara",
+    "type": "Apartment",
+    "noOfPeople": "3",
+    "address": "No:20/A, XYZ, Kerala",
+    "lease": "1 Years"
+  },
+  {
+    "id": 4,
+    "name": "Ken",
+    "type": "Villa",
+    "noOfPeople": "7",
+    "address": "No:20/A, ABC, Chennai",
+    "lease": "5 Years"
+  },
+  {
+    "id": 5,
+    "name": "Joe",
+    "type": "Apartment",
+    "noOfPeople": "1",
+    "address": "No:20/A, BCA, Chennai",
+    "lease": "6 Years"
+  }
+]

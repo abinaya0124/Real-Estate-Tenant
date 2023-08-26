@@ -5,7 +5,7 @@ const addNewTenant = ({ closeBox, handleAdd }) => {
   const [formData, setFormData] = useState({
     name: "",
     type: "",
-    people: "",
+    noOfPeople: "",
     lease: "",
     address: "",
   });
@@ -43,9 +43,9 @@ const addNewTenant = ({ closeBox, handleAdd }) => {
           />
           <label>People Living</label>
           <input
-            type="text"
-            name="people"
-            value={formData.people}
+            type="number"
+            name="noOfPeople"
+            value={formData.noOfPeople}
             onChange={handleData}
           />
           <label>Address</label>

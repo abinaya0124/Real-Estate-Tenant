@@ -16,8 +16,12 @@
     cursor: pointer;
   }
   .edit {
-    color: rgb(245, 40, 40);
-    font-size: 1.2rem;
+    button {
+      color: rgb(245, 40, 40);
+      font-size: 1.2rem;
+      border: none;
+      background: none;
+    }
   }
   .delete {
     font-size: 1.2rem;

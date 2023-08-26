@@ -16,15 +16,21 @@ const TenentDetails = () => {
   const [home, setHome] = useState(initialTenantDetails);
   const [addNewBox, setAddNewBox] = useState(false);
   const [editBox, setEditBox] = useState(false);
-  const [editingRow, setEditingRow] = useState(null);
+  const [rowToEdit, setRowToEdit] = useState(null);
 
-  const handleEdit = (index, edited) => {
-    const editedHome = home.map((item, idx) =>
-      idx === index ? { ...item, ...edited } : item
-    );
-    setHome(editedHome);
-    // setEditingRow(null);
+  const handleEdit = (index) => {
+    setRowToEdit(index);
     setEditBox(true);
+  };
+
+  const handleEditBoxSubmit = (editedRow) => {
+    rowToEdit === null
+      ? setHome([...home, editedRow])
+      : setHome(
+          home.map((currentRow, index) =>
+            index !== rowToEdit ? currentRow : editedRow
+          )
+        );
   };
 
   const handleDelete = (tenantId) => {
@@ -64,14 +70,22 @@ const TenentDetails = () => {
               <td>{item.address}</td>
               <td>{item.lease}</td>
               <td className="edit-delete edit">
-                <TiPencil onClick={() => setEditBox(true)} />
+                <button onClick={() => handleEdit(idx)}>
+                  <TiPencil
+                    onClick={() => {
+                      setEditBox(true);
+                    }}
+                  />
+                </button>
               </td>
-              editingRow===idx?
-              {editBox && (
+              {rowToEdit === idx && editBox && (
                 <EditExistingTenant
-                  closeEdit={() => setEditBox(false)}
+                  onSubmit={handleEditBoxSubmit}
                   item={item}
-                  handleEdit={(edited) => handleEdit(idx, edited)}
+                  closeEdit={() => {
+                    setEditBox(false);
+                    setRowToEdit(null);
+                  }}
                 />
               )}
               <td className="edit-delete delete">

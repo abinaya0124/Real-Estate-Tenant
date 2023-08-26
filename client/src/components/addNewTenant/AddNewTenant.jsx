@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
+import "./addNewTenant.scss";
 
 const addNewTenant = ({ closeBox, handleAdd }) => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const addNewTenant = ({ closeBox, handleAdd }) => {
   };
 
   return (
-    <div>
+    <div className="add-box">
       <div>
         <RxCross2 className="rxCross" onClick={() => closeBox(false)} />
       </div>

@@ -1,0 +1,17 @@
+.add-box {
+  background: #f5f5f5;
+  position: relative;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  width: fit-content;
+  padding: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    button {
+      border: none;
+      background: none;
+    }
+  }
+}

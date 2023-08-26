@@ -4,7 +4,6 @@ import PropertyData from "../../PropertyData.json";
 
 const PropertyDetail = () => {
   const { propertyId } = useParams();
-  // console.log("Card ID:", cardId);
 
   const card = PropertyData.find((card) => card.id === parseInt(propertyId));
 

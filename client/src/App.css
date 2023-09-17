@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Lato:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Lato:wght@400;700&display=swap"); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato";
+  font-family: "Poppins";
 }
 a {
   text-decoration: none;
-  color: #000000;
+  /* color: #000000; */
+}
+.innerWidth {
+  width: 100%;
+}
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.paddings {
+  padding: 1.5rem;
 }

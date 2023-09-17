@@ -1,5 +1,5 @@
 import React from "react";
-import "./properties.css";
+import "./properties.scss";
 import PropertyData from "../../PropertyData.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";

@@ -1,10 +1,15 @@
 .h-wrapper {
   color: #fff;
-  background: #000;
+  // background: #000;
   .h-container {
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: #fff;
+    .h-menu {
+      gap: 2rem;
+    }
+    .h-menu > * {
+      cursor: pointer;
+    }
   }
 }

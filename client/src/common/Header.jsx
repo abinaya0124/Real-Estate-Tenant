@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <section className="h-wrapper">
       <div className="flexCenter innerWidth paddings h-container">
-        <NavLink to="/">Tenant Management System</NavLink>
-        <div className="h-menu">
-          <NavLink to="/properties">Properties</NavLink>
-          <NavLink to="/tenent">Our Values</NavLink>
-          <NavLink to="/tenent">Contact Us</NavLink>
-          <NavLink to="/tenent">Get Started</NavLink>
-          <button>
-            <NavLink to="/tenent">Contact</NavLink>
+        <a to="/">Tenant Management System</a>
+        <div className="flexCenter h-menu">
+          <a to="/residencies">Residencies</a>
+          <a to="/tenent">Our Values</a>
+          <a to="/tenent">Contact Us</a>
+          <a to="/tenent">Get Started</a>
+          <button className="button">
+            <a to="/tenent">Contact</a>
           </button>
         </div>
       </div>

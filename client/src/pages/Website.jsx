@@ -9,6 +9,8 @@ import "./website.scss";
 import Companies from "../components/companies/Companies";
 import Value from "../components/Value/Value";
 import Contact from "../components/Contact/Contact";
+import GetStarted from "../components/GetStarted/GetStarted";
+import Footer from "../components/Footer/Footer";
 
 const Website = () => {
   return (
@@ -22,6 +24,8 @@ const Website = () => {
       <Residencies />
       <Value />
       <Contact />
+      <GetStarted />
+      <Footer />
       {/* <Routes>
         <Route path="/properties" element={<Properties />} /> */}
       {/* <Route path="/hero" element={<Hero />} /> */}

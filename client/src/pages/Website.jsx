@@ -1,11 +1,14 @@
 import React from "react";
 import Header from "../common/Header";
-import Properties from "../components/properties/Properties";
+import Residencies from "../components/residencies/Residencies";
 import { Route, Routes } from "react-router-dom";
-import TenantDetails from "../components/tenant/TenantDetails";
+import TenantDetails from "../components/Tenant/TenantDetails";
 import PropertyDetail from "../components/propertyDetail/PropertyDetail";
 import Hero from "../components/HeroTop/Hero";
 import "./website.scss";
+import Companies from "../components/companies/Companies";
+import Value from "../components/Value/Value";
+import Contact from "../components/Contact/Contact";
 
 const Website = () => {
   return (
@@ -15,6 +18,10 @@ const Website = () => {
         <Header />
         <Hero />
       </div>
+      <Companies />
+      <Residencies />
+      <Value />
+      <Contact />
       {/* <Routes>
         <Route path="/properties" element={<Properties />} /> */}
       {/* <Route path="/hero" element={<Hero />} /> */}

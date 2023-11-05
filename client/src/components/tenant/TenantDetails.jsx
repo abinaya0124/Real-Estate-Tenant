@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import TenantDetails from "../../TenantData.json";
+import TenantDetails from "../../Data/TenantData.json";
 import { TiPencil } from "react-icons/ti";
 import { RiDeleteBin3Fill } from "react-icons/ri";
 import "./tenant.scss";
-import AddNewTenant from "../addNewTenant/AddNewTenant";
+import AddNewTenant from "../AddNewTenant/AddNewTenant";
 import { v4 as uuidv4 } from "uuid";
-import EditExistingTenant from "../editExistingTenant/EditExistingTenant";
+import EditExistingTenant from "../EditExistingTenant/EditExistingTenant";
 
 const TenentDetails = () => {
   const initialTenantDetails = TenantDetails.map((tenant) => ({

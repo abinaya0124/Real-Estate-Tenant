@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import PropertyData from "../../PropertyData.json";
+import ResidencyData from "../../Data/ResidencyData.json";
 
 const PropertyDetail = () => {
   const { propertyId } = useParams();
 
-  const card = PropertyData.find((card) => card.id === parseInt(propertyId));
+  const card = ResidencyData.find((card) => card.id === parseInt(propertyId));
 
   return (
     <div>

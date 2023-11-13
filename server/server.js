@@ -3,6 +3,7 @@ import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import cors from "cors";
 import { userRoute } from "./routes/userRoutes.js";
+import { residencyRoute } from "./routes/residenyRoutes.js";
 
 dotenv.config();
 
@@ -19,3 +20,4 @@ app.listen(PORT, () => {
 });
 
 app.use("/api/user", userRoute);
+app.use("/api/residency", residencyRoute);

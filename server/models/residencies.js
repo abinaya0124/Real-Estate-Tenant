@@ -12,7 +12,7 @@ const ResidencySchema = new mongoose.Schema({
     type: String,
   },
   price: {
-    type: Number,
+    type: String,
   },
   address: {
     type: String,
@@ -34,7 +34,7 @@ const ResidencySchema = new mongoose.Schema({
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "User", // Assuming 'User' is the model name for the User schema
+    ref: "User",
   },
   createdAt: {
     type: Date,

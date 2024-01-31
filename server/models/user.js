@@ -29,9 +29,9 @@ const UserSchema = new mongoose.Schema(
     favResidenciesID: {
       type: [mongoose.Schema.Types.ObjectId],
     },
-    //   ownedResidencies: {
-    //     type: [residencySchema], // Assuming Residency is another Mongoose schema
-    //   },
+    // ownedResidencies: {
+    //   type: [residencySchema], // Assuming Residency is another Mongoose schema
+    // },
   },
   { timestamps: true }
 );

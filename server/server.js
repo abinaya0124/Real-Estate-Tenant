@@ -10,11 +10,11 @@ dotenv.config();
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 const connectDB = async () => {
   try {
@@ -25,9 +25,9 @@ const connectDB = async () => {
   }
 };
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   connectDB();
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
 
 app.use("/api/user", userRoute);

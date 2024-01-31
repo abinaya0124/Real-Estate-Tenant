@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema(
   {
+    _id: {
+      type: mongoose.Schema.Types.ObjectId,
+      auto: true,
+    },
     username: {
       type: String,
       required: true,
@@ -16,6 +20,18 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    image: {
+      type: String,
+    },
+    bookedVisits: {
+      type: [mongoose.Schema.Types.Mixed],
+    },
+    favResidenciesID: {
+      type: [mongoose.Schema.Types.ObjectId],
+    },
+    //   ownedResidencies: {
+    //     type: [residencySchema], // Assuming Residency is another Mongoose schema
+    //   },
   },
   { timestamps: true }
 );

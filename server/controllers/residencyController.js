@@ -1,6 +1,6 @@
 import asyncHandler from "express-async-handler";
 import Residency from "../models/residencies.js";
-import User from "../models/user.js"; // Import the User model
+import User from "../models/user.js";
 
 export const createResidency = asyncHandler(async (req, res) => {
   const {

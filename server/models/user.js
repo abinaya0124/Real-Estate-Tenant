@@ -24,7 +24,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
     bookedVisits: {
-      type: [mongoose.Schema.Types.Mixed],
+      type: Boolean,
     },
     favResidenciesID: {
       type: [mongoose.Schema.Types.ObjectId],
